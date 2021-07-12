@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #E5E5E5;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 870px;
+    background: #FFFFFF;
+    padding: 30px ;
+}
+
+.top-players-area {
+    margin-bottom: 30px;
+}
+.section-title h2{
+    font-weight: 500;
+    font-size: 24px;
+    /* line-height: 36px; */
+    color: #562EFF;
+    margin-top: 3px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr );
+    grid-row-gap: 30px;
+}
+.single-player {
+    display: flex;
+    align-items: center;
+}
+.single-player img {
+    width: 56px;
+    height: 56px;
+}
+.single-player h3 {
+    font-size: 18px;
+    margin-left: 16px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+}
