@@ -1,0 +1,75 @@
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-title h2 {
+        text-align: center;
+    }
+
+    section.header-top-area {
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .players {
+        grid-template-columns: repeat(2 , 1fr );
+
+    }
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .section-title h2 {
+        text-align: center;
+    }
+    .single-player {
+        justify-content: center;
+    }
+ 
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container{
+    width: 100%;
+}
+.courses, .blogs , .players{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    text-align: center;
+}
+.section-title h2 {
+	text-align: center;
+}
+/* .single-player {
+
+	justify-content: center;
+} */
+.single-blog {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.courses , .single-player {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+}
